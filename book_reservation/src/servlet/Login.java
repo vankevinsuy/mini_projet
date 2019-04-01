@@ -26,7 +26,8 @@ public class Login extends HttpServlet {
 		String uname = (String) request.getParameter("uname");		
 
 		if (uname.equals(prof.getName()) || uname.equals(eleve.getName())) {
-			System.out.println("coonexion reussie");
+			System.out.println("connexion reussie");
+			request.getRequestDispatcher("/welcome.jsp").forward(request, response);
 		}
 		
 		else {
