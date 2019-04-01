@@ -10,7 +10,7 @@
 
 <h2>Login</h2>
 
-<form action="/action_page.php">
+<form action="./Login" method = "POST">
   <div class="imgcontainer">
     <img src="img/img_avatar.png" class="avatar">
   </div>
