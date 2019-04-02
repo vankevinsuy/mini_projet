@@ -11,8 +11,8 @@
 		
 		welcome page
 		
-		<form action="./Logout" method = "POST">
-		   <button type="submit">Log out</button>
+		<form action="./Authentification" method = "POST">
+		   <button type="submit" value="deconnexion" name="log">Log out</button>
 		</form>
 	</body>
 </html>
