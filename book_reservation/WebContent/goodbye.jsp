@@ -23,6 +23,14 @@
           <img class="goodbye_img" src="img/goodbye4.gif">
         </div> 
       </div>
+    <div style="text-align: center;">
+      <img class="img_error" src="img/goodbye1.gif">
+      
+      <script>
+        setTimeout(function(){
+              window.location.href = 'form2.html';
+        }, 5000);
+    </script>
     </div>
   </body>
 </html>

@@ -96,8 +96,6 @@ span.psw {
 }
 
 #book_search {
-  background-image: url('img/searchicon.png');
-  background-position: 10px 10px;
   background-repeat: no-repeat;
   width: 100%;
   font-size: 16px;

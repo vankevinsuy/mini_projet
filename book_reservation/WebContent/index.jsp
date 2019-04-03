@@ -10,7 +10,7 @@
 
 <h2>Login</h2>
 
-<form action="/action_page.php">
+<form action="./Authentification" method = "POST">
   <div class="imgcontainer">
     <img src="img/img_avatar.png" class="avatar">
   </div>
@@ -22,7 +22,7 @@
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
         
-    <button type="submit">Login</button>
+    <button type="submit" value="connexion" name="log">Login</button>
 
   </div>
 

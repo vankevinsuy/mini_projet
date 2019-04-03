@@ -4,12 +4,13 @@
 <html>
   <head>
     <meta charset="ISO-8859-1">
-    <title>Insert title here</title>
+    <title>error</title>
+  <link href="style.css" rel="stylesheet">
   </head>
 
   <body>
-  	<div style="text-align: center;">
-  		<img class="img_error" src="img/CodePen-404-Page.gif">
-  	</div>
+    <div style="text-align: center;">
+      <img class="img_error" src="img/CodePen-404-Page.gif">
+    </div>
   </body>
 </html>
