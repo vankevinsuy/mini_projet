@@ -17,9 +17,14 @@ public class Reservation extends HttpServlet {
        
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Book les_miserables = new Book("Les Miserables","Victo Hugo",1862,"Albert Lacroix et Cie","img/Les_miserables.png");
-		Book les_trois_mousquetaires = new Book("les_trois_mousquetaires","Alexandre Dumas",1844,"Baudry","img/Les_trois_mousquetaires.png");
-		Book oliver_twist = new Book("oliver_twist","Charles Dickens",1839,"Baudry","img/oliver_twist.png");
+		Book les_miserables = new Book("Les Miserables","Victo Hugo",1862,"Albert Lacroix et Cie","img/Les_miserables.png", "le remsumé");
+		Book les_trois_mousquetaires = new Book("les_trois_mousquetaires","Alexandre Dumas",1844,"Baudry","img/Les_trois_mousquetaires.png", "le remsumé");
+		Book oliver_twist = new Book("oliver_twist","Charles Dickens",1839,"Baudry","img/oliver_twist.png", "le remsumé");
+		
+		String title = (String) request.getParameter("chosen_book");
+		
+		request.getRequestDispatcher("/books.html").forward(request, response);
+
 	}
 
 }
