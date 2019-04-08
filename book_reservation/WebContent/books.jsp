@@ -54,7 +54,9 @@
 			      <input type="text" readonly class="form-control-plaintext" placeholder=<%out.print(book.getSummary()); %>>
 			    </div>
 			  </div>
-			  <?php if(){ ?>
+			  <?php $book= true;
+echo "aaaaaaaaaaaaaaaaa".$book;
+			   if($book == false){ ?>
 			  		<button type="button" class="btn btn-danger" style="background-color: red;" disabled>This book is already booked !</button>
 			  	<?php }else{ ?>
 			  		<button type="button" class="btn btn-success">Book</button>
