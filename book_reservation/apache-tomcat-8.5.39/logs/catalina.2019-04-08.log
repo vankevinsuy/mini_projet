@@ -1,0 +1,41 @@
+08-Apr-2019 10:41:09.586 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.39
+08-Apr-2019 10:41:09.598 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 14 2019 11:24:26 UTC
+08-Apr-2019 10:41:09.598 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.39.0
+08-Apr-2019 10:41:09.598 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+08-Apr-2019 10:41:09.598 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-45-generic
+08-Apr-2019 10:41:09.598 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-Apr-2019 10:41:09.598 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/jdk1.8.0_51/jre
+08-Apr-2019 10:41:09.598 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_51-b16
+08-Apr-2019 10:41:09.598 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Apr-2019 10:41:09.598 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /mnt/monster/home/eleves/g/guro10697/mini_projet/book_reservation/apache-tomcat-8.5.39
+08-Apr-2019 10:41:09.598 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /mnt/monster/home/eleves/g/guro10697/mini_projet/book_reservation/apache-tomcat-8.5.39
+08-Apr-2019 10:41:09.599 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/mnt/monster/home/eleves/g/guro10697/mini_projet/book_reservation/apache-tomcat-8.5.39/conf/logging.properties
+08-Apr-2019 10:41:09.599 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Apr-2019 10:41:09.599 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Apr-2019 10:41:09.599 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Apr-2019 10:41:09.599 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Apr-2019 10:41:09.599 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Apr-2019 10:41:09.599 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/mnt/monster/home/eleves/g/guro10697/mini_projet/book_reservation/apache-tomcat-8.5.39
+08-Apr-2019 10:41:09.599 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/mnt/monster/home/eleves/g/guro10697/mini_projet/book_reservation/apache-tomcat-8.5.39
+08-Apr-2019 10:41:09.599 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/mnt/monster/home/eleves/g/guro10697/mini_projet/book_reservation/apache-tomcat-8.5.39/temp
+08-Apr-2019 10:41:09.599 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+08-Apr-2019 10:41:09.822 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Apr-2019 10:41:09.840 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Apr-2019 10:41:09.848 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+08-Apr-2019 10:41:09.849 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Apr-2019 10:41:09.849 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 589 ms
+08-Apr-2019 10:41:09.882 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+08-Apr-2019 10:41:09.882 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.39
+08-Apr-2019 10:41:09.897 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire [/mnt/monster/home/eleves/g/guro10697/mini_projet/book_reservation/apache-tomcat-8.5.39/webapps/manager] de l'application web
+08-Apr-2019 10:41:10.204 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/monster/home/eleves/g/guro10697/mini_projet/book_reservation/apache-tomcat-8.5.39/webapps/manager] has finished in [306] ms
+08-Apr-2019 10:41:10.204 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire [/mnt/monster/home/eleves/g/guro10697/mini_projet/book_reservation/apache-tomcat-8.5.39/webapps/examples] de l'application web
+08-Apr-2019 10:41:10.814 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/monster/home/eleves/g/guro10697/mini_projet/book_reservation/apache-tomcat-8.5.39/webapps/examples] has finished in [610] ms
+08-Apr-2019 10:41:10.815 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire [/mnt/monster/home/eleves/g/guro10697/mini_projet/book_reservation/apache-tomcat-8.5.39/webapps/docs] de l'application web
+08-Apr-2019 10:41:10.841 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/monster/home/eleves/g/guro10697/mini_projet/book_reservation/apache-tomcat-8.5.39/webapps/docs] has finished in [27] ms
+08-Apr-2019 10:41:10.841 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire [/mnt/monster/home/eleves/g/guro10697/mini_projet/book_reservation/apache-tomcat-8.5.39/webapps/host-manager] de l'application web
+08-Apr-2019 10:41:10.875 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/monster/home/eleves/g/guro10697/mini_projet/book_reservation/apache-tomcat-8.5.39/webapps/host-manager] has finished in [34] ms
+08-Apr-2019 10:41:10.875 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire [/mnt/monster/home/eleves/g/guro10697/mini_projet/book_reservation/apache-tomcat-8.5.39/webapps/ROOT] de l'application web
+08-Apr-2019 10:41:10.901 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/mnt/monster/home/eleves/g/guro10697/mini_projet/book_reservation/apache-tomcat-8.5.39/webapps/ROOT] has finished in [26] ms
+08-Apr-2019 10:41:10.903 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Apr-2019 10:41:10.908 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+08-Apr-2019 10:41:10.909 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 1059 ms
