@@ -12,5 +12,10 @@
     <div style="text-align: center;">
       <img class="img_error" src="img/CodePen-404-Page.gif">
     </div>
+    <script>
+      setTimeout(function(){
+          window.location.href = 'index.jsp';
+      }, 7000);
+    </script>
   </body>
 </html>
