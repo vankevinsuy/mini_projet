@@ -21,7 +21,8 @@ public class Authentification extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String log = (String) request.getParameter("log");
-		String uname = (String) request.getParameter("uname");		
+		String uname = (String) request.getParameter("uname");	
+		String password = (String) request.getParameter("psw");	
 
 		User prof = new User("prof", "1234" );
 		User eleve = new User("eleve", "invite" );
@@ -29,12 +30,12 @@ public class Authentification extends HttpServlet {
 
 		switch (log) {
 		case "connexion":
-			if (uname.equals(prof.getName()) || uname.equals(eleve.getName())) {
+			if ((uname.equals(prof.getName()) || uname.equals(eleve.getName())) && (password.equals(prof.getPassword()) || password.equals(eleve.getPassword()))) {
 				System.out.println("connexion reussie");
-					request.getRequestDispatcher("/welcome.jsp").forward(request, response);
+					request.getRequestDispatcher("/welcome.html").forward(request, response);
 			}
 			else {
-				request.getRequestDispatcher("/error.jsp").forward(request, response);
+				request.getRequestDispatcher("/error.html").forward(request, response);
 			}
 			
 			break;
