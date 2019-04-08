@@ -1,39 +1,57 @@
 package model;
 
 public class Book {
-	private String name;
-	private String image_Link;
+	private String title;
+	private String author;
+	private int realease_date;
+	private String editor;
+	private String cover;
 	private boolean booked;
 	
 	
-	public Book(String name, String image_Link) {
+	public Book(String title, String author, int realease_date, String editor, String cover) {
 		super();
-		this.name = name;
-		this.image_Link = image_Link;
+		this.title = title;
+		this.author = author;
+		this.realease_date = realease_date;
+		this.editor = editor;
+		this.cover = cover;
 		this.booked = false;
+	}
+
+
+	public String getTitle() {
+		return title;
+	}
+
+
+	public String getAuthor() {
+		return author;
+	}
+
+
+	public int getRealease_date() {
+		return realease_date;
+	}
+
+
+	public String getEditor() {
+		return editor;
+	}
+
+
+	public String getCover() {
+		return cover;
 	}
 
 
 	public boolean isBooked() {
 		return booked;
 	}
-
-
-	public void setBooked(boolean booked) {
-		this.booked = booked;
-	}
-
-
-	public String getName() {
-		return name;
-	}
-
-
-	public String getImage_Link() {
-		return image_Link;
-	}
 	
-	
+	public void setBooked() {
+		this.booked = true;
+	}
 	
 }
 

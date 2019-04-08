@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.Book;
 
 /**
  * Servlet implementation class Reservation
@@ -14,28 +15,11 @@ import javax.servlet.http.HttpServletResponse;
 public class Reservation extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public Reservation() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		Book les_miserables = new Book("Les Miserables","Victo Hugo",1862,"Albert Lacroix et Cie","img/Les_miserables.png");
+		Book les_trois_mousquetaires = new Book("les_trois_mousquetaires","Alexandre Dumas",1844,"Baudry","img/Les_trois_mousquetaires.png");
+		Book oliver_twist = new Book("oliver_twist","Charles Dickens",1839,"Baudry","img/oliver_twist.png");
 	}
 
 }
