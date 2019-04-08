@@ -31,19 +31,19 @@
 		    </tr>
 		  </thead>
 		  <tbody>
-		    <tr onclick="submitForm('Les Miserables');">
+		    <tr onclick="submitForm(1);">
 		      <th scope="row">Les Miserables</th>
 		      <td>Victor Hugo</td>
 		      <td>1862</td>
 		      <td>Albert Lacroix et Cie</td>
 		    </tr>
-		    <tr onclick="submitForm('Les Trois Mousquetaires');">
+		    <tr onclick="submitForm(2);">
 		      <th scope="row">Les Trois Mousquetaires</th>
 		      <td>Alexandre Dumas</td>
 		      <td>1844</td>
 		      <td>Baudry</td>
 		    </tr>
-		    <tr onclick="submitForm('Oliver Twist');">
+		    <tr onclick="submitForm(3);">
 		      <th scope="row">Oliver Twist</th>
 		      <td>Charles Dickens</td>
 		      <td>1839</td>
@@ -52,14 +52,21 @@
 		  </tbody>
 		</table>
 	</div>
+	
+	<form id="1" action="./Reservation" method = "POST">
+	    <input type="hidden" name="chosen_book" value='Les Miserables'>
+	</form>
+	<form id="2" action="./Reservation" method = "POST">
+	    <input type="hidden" name="chosen_book" value='Les Trois Mousquetaires'>
+	</form>
 
-	<form id="titre" action="./Reservation" method = "POST">
-	    <input type="hidden" name="titre" value='okkkkkkkkkkkkkkk'>
+	<form id="3" action="./Reservation" method = "POST">
+	    <input type="hidden" name="chosen_book" value='Oliver Twist'>
 	</form>
 
 	<script>
-	function submitForm(titre) {
-		document.getElementById(titre).submit(); 
+	function submitForm(title) {
+		document.getElementById(title).submit(); 
 	}
 
 	function myFunction() {

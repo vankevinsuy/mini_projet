@@ -7,9 +7,10 @@ public class Book {
 	private String editor;
 	private String cover;
 	private boolean booked;
+	private String summary;
 	
 	
-	public Book(String title, String author, int realease_date, String editor, String cover) {
+	public Book(String title, String author, int realease_date, String editor, String cover, String summary) {
 		super();
 		this.title = title;
 		this.author = author;
@@ -17,6 +18,7 @@ public class Book {
 		this.editor = editor;
 		this.cover = cover;
 		this.booked = false;
+		this.summary = summary;
 	}
 
 
@@ -51,6 +53,10 @@ public class Book {
 	
 	public void setBooked() {
 		this.booked = true;
+	}
+	
+	public String getSummary() {
+		return summary;
 	}
 	
 }
