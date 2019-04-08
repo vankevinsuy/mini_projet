@@ -1,6 +1,8 @@
 package AuthServlet;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,13 +19,32 @@ public class Reservation extends HttpServlet {
        
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Book les_miserables = new Book("Les Miserables","Victo Hugo",1862,"Albert Lacroix et Cie","img/Les_miserables.png", "le remsumé");
-		Book les_trois_mousquetaires = new Book("les_trois_mousquetaires","Alexandre Dumas",1844,"Baudry","img/Les_trois_mousquetaires.png", "le remsumé");
-		Book oliver_twist = new Book("oliver_twist","Charles Dickens",1839,"Baudry","img/oliver_twist.png", "le remsumé");
+		Book les_miserables = new Book("Les Miserables","Victo Hugo",1862,"Albert Lacroix et Cie","img/Les_Miserables.jpg", "le remsumé");
+		Book les_trois_mousquetaires = new Book("Les Trois Mousquetaires","Alexandre Dumas",1844,"Baudry","img/Les_Trois_Mousquetaires.jpg", "le remsumé");
+		Book oliver_twist = new Book("Oliver Twist","Charles Dickens",1839,"Baudry","img/Oliver_Twist.jpg", "le remsumé");
 		
 		String title = (String) request.getParameter("chosen_book");
+		RequestDispatcher dispatcher=getServletContext().getRequestDispatcher("/books.jsp");
+
 		
-		request.getRequestDispatcher("/books.html").forward(request, response);
+		switch (title) {
+		case "Les Miserables":
+			request.setAttribute("book", les_miserables);
+			dispatcher.include(request, response);
+			break;
+			
+		case "Les Trois Mousquetaires":
+			request.setAttribute("book", les_trois_mousquetaires);
+			dispatcher.include(request, response);
+			break;
+			
+		case "Oliver Twist":
+			request.setAttribute("book", oliver_twist);
+			dispatcher.include(request, response);
+			break;
+
+		}
+//		request.getRequestDispatcher("/books.html").forward(request, response);
 
 	}
 
