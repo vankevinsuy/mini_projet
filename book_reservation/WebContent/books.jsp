@@ -27,43 +27,59 @@
 			  <div class="form-group row">
 			    <label for="staticEmail" class="col-sm-2 col-form-label">Title</label>
 			    <div class="col-sm-10">
-			      <input type="text" readonly class="form-control-plaintext" placeholder=<%out.print(book.getTitle()); %>>
-			    </div>
+                <p class="form-control-plaintext"><%out.print(book.getTitle()); %></p>
+                </div>
 			  </div>
 			  <div class="form-group row">
 			    <label for="staticEmail" class="col-sm-2 col-form-label">Author</label>
 			    <div class="col-sm-10">
-			      <input type="text" readonly class="form-control-plaintext" placeholder=<%out.print(book.getAuthor()); %>>
+			      <p class="form-control-plaintext"><%out.print(book.getAuthor()); %></p>
 			    </div>
 			  </div>
 			  <div class="form-group row">
 			    <label for="staticEmail" class="col-sm-2 col-form-label">Release date</label>
 			    <div class="col-sm-10">
-			      <input type="text" readonly class="form-control-plaintext" placeholder=<%out.print(book.getRealease_date()); %>>
+			      <p class="form-control-plaintext"><%out.print(book.getRealease_date()); %></p>
 			    </div>
 			  </div>
 			  <div class="form-group row">
 			    <label for="staticEmail" class="col-sm-2 col-form-label">Editor</label>
 			    <div class="col-sm-10">
-			      <input type="text" readonly class="form-control-plaintext" placeholder=<%out.print(book.getEditor()); %>>
+            <p class="form-control-plaintext"><%out.print(book.getEditor()); %></p>
 			    </div>
 			  </div>
 			  <div class="form-group row">
 			    <label for="staticEmail" class="col-sm-2 col-form-label">Summary</label>
 			    <div class="col-sm-10">
-			      <input type="text" readonly class="form-control-plaintext" placeholder=<%out.print(book.getSummary()); %>>
+            <p class="form-control-plaintext"><%out.print(book.getSummary()); %></p>
 			    </div>
 			  </div>
-			  <?php $book= true;
-echo "aaaaaaaaaaaaaaaaa".$book;
-			   if($book == false){ ?>
-			  		<button type="button" class="btn btn-danger" style="background-color: red;" disabled>This book is already booked !</button>
-			  	<?php }else{ ?>
-			  		<button type="button" class="btn btn-success">Book</button>
-			  	<?php } ?>
+			  
+        <script>
+			var resa = "<%out.print(book.isBookedasString());%>";
+			
+	 		if(resa == "false"){
+				alert("pas réservé");
+				document.write('<button type="button" class="btn btn-success" onclick="reserv();">Book</button>'); 
+	  		}
+	 		else{
+				alert("réservé");
+				document.write('<button type="button" class="btn btn-danger" style="background-color: red;" disabled>This book is already booked !</button>');
+	  		} 
+ 
+		</script>
+		
+		<script>
+ 		function reserv(val){
+ 			swal("Good job!", "You clicked the button!", "success");
+ 			<%book.setBooked();%>
+ 		} 
+		</script>
 			</form>
 	  	</div>
   	</div>
 
   </body>
+
+  
 </html>

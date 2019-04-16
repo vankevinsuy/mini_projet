@@ -51,8 +51,20 @@ public class Book {
 		return booked;
 	}
 	
+	public String isBookedasString() {
+		String p = "none";
+		if(this.booked) {
+			p= "true";
+		}
+		else {
+			p="false";
+		}
+		
+		return p;
+	}
+	
 	public void setBooked() {
-		this.booked = true;
+			this.booked = true;
 	}
 	
 	public String getSummary() {
